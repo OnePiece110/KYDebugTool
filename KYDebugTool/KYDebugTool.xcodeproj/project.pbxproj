@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D8318D92B61F06500503C25 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318D82B61F06500503C25 /* RequestManager.swift */; };
+		3D8318DB2B61F25500503C25 /* KYSwizzleSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318DA2B61F25500503C25 /* KYSwizzleSessionConfiguration.swift */; };
+		3D8318DE2B61F2A400503C25 /* KYCustomHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318DD2B61F2A400503C25 /* KYCustomHTTPProtocol.swift */; };
+		3D8318E02B61F30900503C25 /* URLCache+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318DF2B61F30900503C25 /* URLCache+.swift */; };
+		3D8318E22B61F33000503C25 /* KYApplicationDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318E12B61F33000503C25 /* KYApplicationDirectories.swift */; };
+		3D8318E42B61F39000503C25 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318E32B61F39000503C25 /* Date+.swift */; };
+		3D8318E62B61F3A400503C25 /* HTTPURLResponse+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318E52B61F3A400503C25 /* HTTPURLResponse+.swift */; };
+		3D8318E92B61F41A00503C25 /* KYThreadOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318E82B61F41A00503C25 /* KYThreadOperator.swift */; };
+		3D8318EB2B61F46800503C25 /* KYDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318EA2B61F46800503C25 /* KYDebug.swift */; };
+		3D8318ED2B61F4A500503C25 /* KYUserDefaultsAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318EC2B61F4A500503C25 /* KYUserDefaultsAccess.swift */; };
+		3D8318F02B61F50300503C25 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318EF2B61F50300503C25 /* KeychainService.swift */; };
+		3D8318F22B61F56400503C25 /* KYNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318F12B61F56400503C25 /* KYNetworkHelper.swift */; };
+		3D8318F42B61F59E00503C25 /* InputStream+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318F32B61F59E00503C25 /* InputStream+.swift */; };
+		3D8318F62B61F5C300503C25 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318F52B61F5C300503C25 /* Data+.swift */; };
+		3D8318F82B61F5E900503C25 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318F72B61F5E900503C25 /* Dictionary+.swift */; };
+		3D8318FA2B61F61900503C25 /* KYErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318F92B61F61900503C25 /* KYErrorHelper.swift */; };
+		3D8318FC2B61F65800503C25 /* KYCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318FB2B61F65800503C25 /* KYCacheHelper.swift */; };
+		3D8318FF2B61F6B800503C25 /* KYNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8318FE2B61F6B800503C25 /* KYNetworkViewController.swift */; };
+		3D8319012B61F6F700503C25 /* KYNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319002B61F6F700503C25 /* KYNetworkViewModel.swift */; };
+		3D8319042B61F8CB00503C25 /* KYNetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319032B61F8CB00503C25 /* KYNetworkTableViewCell.swift */; };
+		3D8319062B61F8FB00503C25 /* KYNetworkViewControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319052B61F8FB00503C25 /* KYNetworkViewControllerDetail.swift */; };
+		3D8319082B61F98C00503C25 /* KYNetworkTableViewCellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319072B61F98C00503C25 /* KYNetworkTableViewCellDetail.swift */; };
+		3D83190B2B6200C100503C25 /* KYAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83190A2B6200C100503C25 /* KYAppViewController.swift */; };
+		3D83190E2B6200FB00503C25 /* KYAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83190D2B6200FB00503C25 /* KYAppViewModel.swift */; };
+		3D8319112B62014600503C25 /* KYUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319102B62014600503C25 /* KYUserInfo.swift */; };
+		3D8319132B6201FD00503C25 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319122B6201FD00503C25 /* UIDevice+.swift */; };
+		3D8319162B62023000503C25 /* KYCustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319152B62023000503C25 /* KYCustomData.swift */; };
+		3D8319182B62025C00503C25 /* KYCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319172B62025C00503C25 /* KYCustomAction.swift */; };
+		3D83191A2B6202B100503C25 /* KYLaunchTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319192B6202B100503C25 /* KYLaunchTimeTracker.swift */; };
+		3D83191C2B6202DB00503C25 /* KYReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83191B2B6202DB00503C25 /* KYReachabilityManager.swift */; };
+		3D83191E2B6202FB00503C25 /* KYReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83191D2B6202FB00503C25 /* KYReachability.swift */; };
+		3D8319212B62043500503C25 /* KYMenuSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319202B62043500503C25 /* KYMenuSwitchTableViewCell.swift */; };
+		3D8319232B62048E00503C25 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319222B62048E00503C25 /* UITableViewCell+.swift */; };
+		3D8319252B6204A700503C25 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319242B6204A700503C25 /* UILabel+.swift */; };
+		3D8319272B6204C200503C25 /* KYAppCustomInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319262B6204C200503C25 /* KYAppCustomInfoViewModel.swift */; };
+		3D8319292B6204ED00503C25 /* KYResourcesGenericController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319282B6204ED00503C25 /* KYResourcesGenericController.swift */; };
+		3D83192B2B6205DF00503C25 /* KYAppCustomActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83192A2B6205DF00503C25 /* KYAppCustomActionViewModel.swift */; };
+		3D83192D2B62062300503C25 /* KYAppConsoleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83192C2B62062300503C25 /* KYAppConsoleViewModel.swift */; };
+		3D83192F2B62068800503C25 /* KYLogIntercepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83192E2B62068800503C25 /* KYLogIntercepter.swift */; };
+		3D8319342B62075E00503C25 /* KYCrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319332B62075E00503C25 /* KYCrashViewController.swift */; };
+		3D8319362B62079100503C25 /* KYCrashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319352B62079100503C25 /* KYCrashViewModel.swift */; };
+		3D8319392B6207DB00503C25 /* KYCrashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319382B6207DB00503C25 /* KYCrashModel.swift */; };
+		3D83193C2B62082200503C25 /* KYCrashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83193B2B62082200503C25 /* KYCrashManager.swift */; };
+		3D83193E2B62084800503C25 /* KYCrashHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83193D2B62084800503C25 /* KYCrashHandler.swift */; };
+		3D8319402B6208FE00503C25 /* KYTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83193F2B6208FE00503C25 /* KYTrace.swift */; };
+		3D8319422B6209EA00503C25 /* KYCrashDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319412B6209EA00503C25 /* KYCrashDetailViewModel.swift */; };
+		3D8319442B620A1C00503C25 /* KYCrashDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319432B620A1C00503C25 /* KYCrashDetailViewController.swift */; };
+		3D8319462B620A9A00503C25 /* KYPDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319452B620A9A00503C25 /* KYPDFManager.swift */; };
+		3D8319482B620B0E00503C25 /* KYSnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319472B620B0E00503C25 /* KYSnapshotViewController.swift */; };
+		3D83194A2B620B4500503C25 /* KYLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8319492B620B4500503C25 /* KYLogsViewController.swift */; };
+		3DD6F3792B61E96A004E5B3A /* KYSnapshotActionSheetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3782B61E96A004E5B3A /* KYSnapshotActionSheetUtils.swift */; };
+		3DD6F37B2B61E99C004E5B3A /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F37A2B61E99C004E5B3A /* UIApplication+.swift */; };
+		3DD6F37E2B61E9D5004E5B3A /* KYTransitionPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F37D2B61E9D5004E5B3A /* KYTransitionPush.swift */; };
+		3DD6F3802B61EA1F004E5B3A /* KYTransitionPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F37F2B61EA1F004E5B3A /* KYTransitionPop.swift */; };
+		3DD6F3822B61EAA4004E5B3A /* KYHierarchyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3812B61EAA4004E5B3A /* KYHierarchyTableViewController.swift */; };
+		3DD6F3842B61EAEA004E5B3A /* KYTreeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3832B61EAEA004E5B3A /* KYTreeTableViewDataSource.swift */; };
+		3DD6F3862B61EB42004E5B3A /* KYHierarchyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3852B61EB42004E5B3A /* KYHierarchyTableViewCell.swift */; };
+		3DD6F3882B61EB78004E5B3A /* KYParallelLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3872B61EB78004E5B3A /* KYParallelLineView.swift */; };
+		3DD6F38A2B61ECA0004E5B3A /* KYDebuggerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3892B61ECA0004E5B3A /* KYDebuggerDetailViewController.swift */; };
+		3DD6F3922B61EDD1004E5B3A /* KYHttpDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3912B61EDD1004E5B3A /* KYHttpDatasource.swift */; };
+		3DD6F3952B61EDF8004E5B3A /* KYHttpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3942B61EDF8004E5B3A /* KYHttpModel.swift */; };
+		3DD6F3982B61EE39004E5B3A /* KYDebugTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F3972B61EE39004E5B3A /* KYDebugTool.swift */; };
+		3DE162812B614FCF00173E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162802B614FCF00173E40 /* AppDelegate.swift */; };
+		3DE162832B614FCF00173E40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162822B614FCF00173E40 /* SceneDelegate.swift */; };
+		3DE162852B614FCF00173E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162842B614FCF00173E40 /* ViewController.swift */; };
+		3DE162882B614FCF00173E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE162862B614FCF00173E40 /* Main.storyboard */; };
+		3DE1628A2B614FD100173E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE162892B614FD100173E40 /* Assets.xcassets */; };
+		3DE1628D2B614FD100173E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1628B2B614FD100173E40 /* LaunchScreen.storyboard */; };
+		3DE162972B61508400173E40 /* KYBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162962B61508400173E40 /* KYBaseController.swift */; };
+		3DE162992B61519400173E40 /* KYBaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162982B61519400173E40 /* KYBaseTableController.swift */; };
+		3DE1629B2B61521200173E40 /* KYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1629A2B61521200173E40 /* KYTabBarController.swift */; };
+		3DE1629E2B61532F00173E40 /* KYContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1629D2B61532F00173E40 /* KYContants.swift */; };
+		3DE162A42B61538200173E40 /* KYWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162A32B61538200173E40 /* KYWindowManager.swift */; };
+		3DE162A72B61554000173E40 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162A62B61554000173E40 /* UINavigationController+.swift */; };
+		3DE162A92B61559400173E40 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162A82B61559400173E40 /* UIWindow+.swift */; };
+		3DE162AB2B6155EA00173E40 /* KYFloatViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162AA2B6155EA00173E40 /* KYFloatViewManager.swift */; };
+		3DE162AE2B61561800173E40 /* KYBottomFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162AD2B61561800173E40 /* KYBottomFloatView.swift */; };
+		3DE162B02B61566500173E40 /* KYFloatBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162AF2B61566500173E40 /* KYFloatBallView.swift */; };
+		3DE162B22B61573900173E40 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162B12B61573900173E40 /* UIViewController+.swift */; };
+		3DE162B42B61587C00173E40 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162B32B61587C00173E40 /* UIView+.swift */; };
+		3DE162B62B6159CC00173E40 /* KYTouchIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162B52B6159CC00173E40 /* KYTouchIndicatorView.swift */; };
+		3DE162B82B615A7200173E40 /* KYUserInterfaceToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162B72B615A7200173E40 /* KYUserInterfaceToolKit.swift */; };
+		3DE162BA2B615AB300173E40 /* KYGridOverlayColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162B92B615AB300173E40 /* KYGridOverlayColorScheme.swift */; };
+		3DE162BC2B615AE100173E40 /* KYGridOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162BB2B615AE100173E40 /* KYGridOverlayView.swift */; };
+		3DE162BE2B615B0100173E40 /* KYTopLevelViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162BD2B615B0100173E40 /* KYTopLevelViewWrapper.swift */; };
+		3DE162C02B615B5500173E40 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162BF2B615B5500173E40 /* UIImage+.swift */; };
+		3DE162C22B615B7400173E40 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162C12B615B7400173E40 /* String+.swift */; };
+		3DE162C42B615BAC00173E40 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162C32B615BAB00173E40 /* UIColor+.swift */; };
+		3DE162C62B615BE800173E40 /* KYSwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162C52B615BE800173E40 /* KYSwizzleManager.swift */; };
+		3DE162C92B615D5300173E40 /* KYInAppViewDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162C82B615D5300173E40 /* KYInAppViewDebugger.swift */; };
+		3DE162CB2B615E6600173E40 /* KYSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162CA2B615E6600173E40 /* KYSnapshot.swift */; };
+		3DE162CD2B615E8700173E40 /* KYElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162CC2B615E8700173E40 /* KYElement.swift */; };
+		3DE162CF2B615FBC00173E40 /* KYConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162CE2B615FBC00173E40 /* KYConfiguration.swift */; };
+		3DE162D12B615FD900173E40 /* KYSnapshotViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162D02B615FD900173E40 /* KYSnapshotViewConfiguration.swift */; };
+		3DE162D32B615FFC00173E40 /* KYHierarchyViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162D22B615FFC00173E40 /* KYHierarchyViewConfiguration.swift */; };
+		3DE162D52B61605900173E40 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162D42B61605900173E40 /* ViewControllerUtils.swift */; };
+		3DE162D72B61607F00173E40 /* KYViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162D62B61607F00173E40 /* KYViewElement.swift */; };
+		3DE162D92B61620F00173E40 /* KYViewDebuggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162D82B61620F00173E40 /* KYViewDebuggerViewController.swift */; };
+		3DE162DB2B61647500173E40 /* KYDebugSnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162DA2B61647500173E40 /* KYDebugSnapshotViewController.swift */; };
+		3DE162DD2B6164BB00173E40 /* KYSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162DC2B6164BB00173E40 /* KYSnapshotView.swift */; };
+		3DE162DF2B61651500173E40 /* KYRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE162DE2B61651500173E40 /* KYRangeSlider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D8318D82B61F06500503C25 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		3D8318DA2B61F25500503C25 /* KYSwizzleSessionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSwizzleSessionConfiguration.swift; sourceTree = "<group>"; };
+		3D8318DD2B61F2A400503C25 /* KYCustomHTTPProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCustomHTTPProtocol.swift; sourceTree = "<group>"; };
+		3D8318DF2B61F30900503C25 /* URLCache+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLCache+.swift"; sourceTree = "<group>"; };
+		3D8318E12B61F33000503C25 /* KYApplicationDirectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYApplicationDirectories.swift; sourceTree = "<group>"; };
+		3D8318E32B61F39000503C25 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		3D8318E52B61F3A400503C25 /* HTTPURLResponse+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+.swift"; sourceTree = "<group>"; };
+		3D8318E82B61F41A00503C25 /* KYThreadOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYThreadOperator.swift; sourceTree = "<group>"; };
+		3D8318EA2B61F46800503C25 /* KYDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDebug.swift; sourceTree = "<group>"; };
+		3D8318EC2B61F4A500503C25 /* KYUserDefaultsAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserDefaultsAccess.swift; sourceTree = "<group>"; };
+		3D8318EF2B61F50300503C25 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		3D8318F12B61F56400503C25 /* KYNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkHelper.swift; sourceTree = "<group>"; };
+		3D8318F32B61F59E00503C25 /* InputStream+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputStream+.swift"; sourceTree = "<group>"; };
+		3D8318F52B61F5C300503C25 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		3D8318F72B61F5E900503C25 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		3D8318F92B61F61900503C25 /* KYErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYErrorHelper.swift; sourceTree = "<group>"; };
+		3D8318FB2B61F65800503C25 /* KYCacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCacheHelper.swift; sourceTree = "<group>"; };
+		3D8318FE2B61F6B800503C25 /* KYNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkViewController.swift; sourceTree = "<group>"; };
+		3D8319002B61F6F700503C25 /* KYNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkViewModel.swift; sourceTree = "<group>"; };
+		3D8319032B61F8CB00503C25 /* KYNetworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkTableViewCell.swift; sourceTree = "<group>"; };
+		3D8319052B61F8FB00503C25 /* KYNetworkViewControllerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkViewControllerDetail.swift; sourceTree = "<group>"; };
+		3D8319072B61F98C00503C25 /* KYNetworkTableViewCellDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYNetworkTableViewCellDetail.swift; sourceTree = "<group>"; };
+		3D83190A2B6200C100503C25 /* KYAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYAppViewController.swift; sourceTree = "<group>"; };
+		3D83190D2B6200FB00503C25 /* KYAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYAppViewModel.swift; sourceTree = "<group>"; };
+		3D8319102B62014600503C25 /* KYUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserInfo.swift; sourceTree = "<group>"; };
+		3D8319122B6201FD00503C25 /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
+		3D8319152B62023000503C25 /* KYCustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCustomData.swift; sourceTree = "<group>"; };
+		3D8319172B62025C00503C25 /* KYCustomAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCustomAction.swift; sourceTree = "<group>"; };
+		3D8319192B6202B100503C25 /* KYLaunchTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLaunchTimeTracker.swift; sourceTree = "<group>"; };
+		3D83191B2B6202DB00503C25 /* KYReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYReachabilityManager.swift; sourceTree = "<group>"; };
+		3D83191D2B6202FB00503C25 /* KYReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYReachability.swift; sourceTree = "<group>"; };
+		3D8319202B62043500503C25 /* KYMenuSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYMenuSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		3D8319222B62048E00503C25 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		3D8319242B6204A700503C25 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		3D8319262B6204C200503C25 /* KYAppCustomInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYAppCustomInfoViewModel.swift; sourceTree = "<group>"; };
+		3D8319282B6204ED00503C25 /* KYResourcesGenericController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYResourcesGenericController.swift; sourceTree = "<group>"; };
+		3D83192A2B6205DF00503C25 /* KYAppCustomActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYAppCustomActionViewModel.swift; sourceTree = "<group>"; };
+		3D83192C2B62062300503C25 /* KYAppConsoleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYAppConsoleViewModel.swift; sourceTree = "<group>"; };
+		3D83192E2B62068800503C25 /* KYLogIntercepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLogIntercepter.swift; sourceTree = "<group>"; };
+		3D8319332B62075E00503C25 /* KYCrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashViewController.swift; sourceTree = "<group>"; };
+		3D8319352B62079100503C25 /* KYCrashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashViewModel.swift; sourceTree = "<group>"; };
+		3D8319382B6207DB00503C25 /* KYCrashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashModel.swift; sourceTree = "<group>"; };
+		3D83193B2B62082200503C25 /* KYCrashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashManager.swift; sourceTree = "<group>"; };
+		3D83193D2B62084800503C25 /* KYCrashHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashHandler.swift; sourceTree = "<group>"; };
+		3D83193F2B6208FE00503C25 /* KYTrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTrace.swift; sourceTree = "<group>"; };
+		3D8319412B6209EA00503C25 /* KYCrashDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashDetailViewModel.swift; sourceTree = "<group>"; };
+		3D8319432B620A1C00503C25 /* KYCrashDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCrashDetailViewController.swift; sourceTree = "<group>"; };
+		3D8319452B620A9A00503C25 /* KYPDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYPDFManager.swift; sourceTree = "<group>"; };
+		3D8319472B620B0E00503C25 /* KYSnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSnapshotViewController.swift; sourceTree = "<group>"; };
+		3D8319492B620B4500503C25 /* KYLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLogsViewController.swift; sourceTree = "<group>"; };
+		3DD6F3782B61E96A004E5B3A /* KYSnapshotActionSheetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSnapshotActionSheetUtils.swift; sourceTree = "<group>"; };
+		3DD6F37A2B61E99C004E5B3A /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		3DD6F37D2B61E9D5004E5B3A /* KYTransitionPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTransitionPush.swift; sourceTree = "<group>"; };
+		3DD6F37F2B61EA1F004E5B3A /* KYTransitionPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTransitionPop.swift; sourceTree = "<group>"; };
+		3DD6F3812B61EAA4004E5B3A /* KYHierarchyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYHierarchyTableViewController.swift; sourceTree = "<group>"; };
+		3DD6F3832B61EAEA004E5B3A /* KYTreeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTreeTableViewDataSource.swift; sourceTree = "<group>"; };
+		3DD6F3852B61EB42004E5B3A /* KYHierarchyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYHierarchyTableViewCell.swift; sourceTree = "<group>"; };
+		3DD6F3872B61EB78004E5B3A /* KYParallelLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYParallelLineView.swift; sourceTree = "<group>"; };
+		3DD6F3892B61ECA0004E5B3A /* KYDebuggerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDebuggerDetailViewController.swift; sourceTree = "<group>"; };
+		3DD6F3912B61EDD1004E5B3A /* KYHttpDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYHttpDatasource.swift; sourceTree = "<group>"; };
+		3DD6F3942B61EDF8004E5B3A /* KYHttpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYHttpModel.swift; sourceTree = "<group>"; };
+		3DD6F3972B61EE39004E5B3A /* KYDebugTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDebugTool.swift; sourceTree = "<group>"; };
+		3DE1627D2B614FCF00173E40 /* KYDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE162802B614FCF00173E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DE162822B614FCF00173E40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DE162842B614FCF00173E40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE162872B614FCF00173E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE162892B614FD100173E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DE1628C2B614FD100173E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DE1628E2B614FD100173E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE162962B61508400173E40 /* KYBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYBaseController.swift; sourceTree = "<group>"; };
+		3DE162982B61519400173E40 /* KYBaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYBaseTableController.swift; sourceTree = "<group>"; };
+		3DE1629A2B61521200173E40 /* KYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTabBarController.swift; sourceTree = "<group>"; };
+		3DE1629D2B61532F00173E40 /* KYContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYContants.swift; sourceTree = "<group>"; };
+		3DE162A32B61538200173E40 /* KYWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYWindowManager.swift; sourceTree = "<group>"; };
+		3DE162A62B61554000173E40 /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		3DE162A82B61559400173E40 /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
+		3DE162AA2B6155EA00173E40 /* KYFloatViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYFloatViewManager.swift; sourceTree = "<group>"; };
+		3DE162AD2B61561800173E40 /* KYBottomFloatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYBottomFloatView.swift; sourceTree = "<group>"; };
+		3DE162AF2B61566500173E40 /* KYFloatBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYFloatBallView.swift; sourceTree = "<group>"; };
+		3DE162B12B61573900173E40 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		3DE162B32B61587C00173E40 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		3DE162B52B6159CC00173E40 /* KYTouchIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTouchIndicatorView.swift; sourceTree = "<group>"; };
+		3DE162B72B615A7200173E40 /* KYUserInterfaceToolKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserInterfaceToolKit.swift; sourceTree = "<group>"; };
+		3DE162B92B615AB300173E40 /* KYGridOverlayColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYGridOverlayColorScheme.swift; sourceTree = "<group>"; };
+		3DE162BB2B615AE100173E40 /* KYGridOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYGridOverlayView.swift; sourceTree = "<group>"; };
+		3DE162BD2B615B0100173E40 /* KYTopLevelViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYTopLevelViewWrapper.swift; sourceTree = "<group>"; };
+		3DE162BF2B615B5500173E40 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		3DE162C12B615B7400173E40 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		3DE162C32B615BAB00173E40 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		3DE162C52B615BE800173E40 /* KYSwizzleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSwizzleManager.swift; sourceTree = "<group>"; };
+		3DE162C82B615D5300173E40 /* KYInAppViewDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYInAppViewDebugger.swift; sourceTree = "<group>"; };
+		3DE162CA2B615E6600173E40 /* KYSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSnapshot.swift; sourceTree = "<group>"; };
+		3DE162CC2B615E8700173E40 /* KYElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYElement.swift; sourceTree = "<group>"; };
+		3DE162CE2B615FBC00173E40 /* KYConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYConfiguration.swift; sourceTree = "<group>"; };
+		3DE162D02B615FD900173E40 /* KYSnapshotViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSnapshotViewConfiguration.swift; sourceTree = "<group>"; };
+		3DE162D22B615FFC00173E40 /* KYHierarchyViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYHierarchyViewConfiguration.swift; sourceTree = "<group>"; };
+		3DE162D42B61605900173E40 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		3DE162D62B61607F00173E40 /* KYViewElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewElement.swift; sourceTree = "<group>"; };
+		3DE162D82B61620F00173E40 /* KYViewDebuggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewDebuggerViewController.swift; sourceTree = "<group>"; };
+		3DE162DA2B61647500173E40 /* KYDebugSnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDebugSnapshotViewController.swift; sourceTree = "<group>"; };
+		3DE162DC2B6164BB00173E40 /* KYSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYSnapshotView.swift; sourceTree = "<group>"; };
+		3DE162DE2B61651500173E40 /* KYRangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYRangeSlider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE1627A2B614FCF00173E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D8318D72B61F05A00503C25 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D8318D82B61F06500503C25 /* RequestManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3D8318E72B61F3EB00503C25 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D8318E12B61F33000503C25 /* KYApplicationDirectories.swift */,
+				3D8318DA2B61F25500503C25 /* KYSwizzleSessionConfiguration.swift */,
+				3D8318DD2B61F2A400503C25 /* KYCustomHTTPProtocol.swift */,
+				3D8318E82B61F41A00503C25 /* KYThreadOperator.swift */,
+				3D8318F12B61F56400503C25 /* KYNetworkHelper.swift */,
+				3D8318F92B61F61900503C25 /* KYErrorHelper.swift */,
+				3D8318FB2B61F65800503C25 /* KYCacheHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3D8318EE2B61F4F100503C25 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				3D8318EF2B61F50300503C25 /* KeychainService.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		3D8318FD2B61F6AE00503C25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8318FE2B61F6B800503C25 /* KYNetworkViewController.swift */,
+				3D8319002B61F6F700503C25 /* KYNetworkViewModel.swift */,
+				3D8319052B61F8FB00503C25 /* KYNetworkViewControllerDetail.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D8319022B61F8C200503C25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319032B61F8CB00503C25 /* KYNetworkTableViewCell.swift */,
+				3D8319072B61F98C00503C25 /* KYNetworkTableViewCellDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8319092B6200BA00503C25 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319322B62075000503C25 /* Crash */,
+				3D83191F2B62042800503C25 /* View */,
+				3D8319142B62022600503C25 /* Model */,
+				3D83190F2B62013A00503C25 /* Helper */,
+				3D83190C2B6200C400503C25 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D83190C2B6200C400503C25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D83190A2B6200C100503C25 /* KYAppViewController.swift */,
+				3D83190D2B6200FB00503C25 /* KYAppViewModel.swift */,
+				3D8319282B6204ED00503C25 /* KYResourcesGenericController.swift */,
+				3D83192A2B6205DF00503C25 /* KYAppCustomActionViewModel.swift */,
+				3D83192C2B62062300503C25 /* KYAppConsoleViewModel.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D83190F2B62013A00503C25 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319102B62014600503C25 /* KYUserInfo.swift */,
+				3D8319122B6201FD00503C25 /* UIDevice+.swift */,
+				3D8319192B6202B100503C25 /* KYLaunchTimeTracker.swift */,
+				3D83191B2B6202DB00503C25 /* KYReachabilityManager.swift */,
+				3D83191D2B6202FB00503C25 /* KYReachability.swift */,
+				3D8319222B62048E00503C25 /* UITableViewCell+.swift */,
+				3D8319242B6204A700503C25 /* UILabel+.swift */,
+				3D83192E2B62068800503C25 /* KYLogIntercepter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3D8319142B62022600503C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319152B62023000503C25 /* KYCustomData.swift */,
+				3D8319172B62025C00503C25 /* KYCustomAction.swift */,
+				3D8319262B6204C200503C25 /* KYAppCustomInfoViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D83191F2B62042800503C25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319202B62043500503C25 /* KYMenuSwitchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8319322B62075000503C25 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				3D83193A2B62081500503C25 /* Helper */,
+				3D8319372B6207CC00503C25 /* Model */,
+				3D8319332B62075E00503C25 /* KYCrashViewController.swift */,
+				3D8319352B62079100503C25 /* KYCrashViewModel.swift */,
+				3D8319432B620A1C00503C25 /* KYCrashDetailViewController.swift */,
+				3D8319412B6209EA00503C25 /* KYCrashDetailViewModel.swift */,
+				3D8319472B620B0E00503C25 /* KYSnapshotViewController.swift */,
+				3D8319492B620B4500503C25 /* KYLogsViewController.swift */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		3D8319372B6207CC00503C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319382B6207DB00503C25 /* KYCrashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D83193A2B62081500503C25 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D83193B2B62082200503C25 /* KYCrashManager.swift */,
+				3D83193D2B62084800503C25 /* KYCrashHandler.swift */,
+				3D83193F2B6208FE00503C25 /* KYTrace.swift */,
+				3D8319452B620A9A00503C25 /* KYPDFManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3DD6F37C2B61E9C8004E5B3A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F37D2B61E9D5004E5B3A /* KYTransitionPush.swift */,
+				3DD6F37F2B61EA1F004E5B3A /* KYTransitionPop.swift */,
+				3D8318EA2B61F46800503C25 /* KYDebug.swift */,
+				3D8318EC2B61F4A500503C25 /* KYUserDefaultsAccess.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3DD6F38B2B61ED14004E5B3A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F3892B61ECA0004E5B3A /* KYDebuggerDetailViewController.swift */,
+				3DE162D82B61620F00173E40 /* KYViewDebuggerViewController.swift */,
+				3DE162DA2B61647500173E40 /* KYDebugSnapshotViewController.swift */,
+				3DD6F3812B61EAA4004E5B3A /* KYHierarchyTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3DD6F38C2B61ED26004E5B3A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162C82B615D5300173E40 /* KYInAppViewDebugger.swift */,
+				3DE162D42B61605900173E40 /* ViewControllerUtils.swift */,
+				3DD6F3782B61E96A004E5B3A /* KYSnapshotActionSheetUtils.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3DD6F38D2B61ED34004E5B3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162DC2B6164BB00173E40 /* KYSnapshotView.swift */,
+				3DE162DE2B61651500173E40 /* KYRangeSlider.swift */,
+				3DD6F3852B61EB42004E5B3A /* KYHierarchyTableViewCell.swift */,
+				3DD6F3872B61EB78004E5B3A /* KYParallelLineView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DD6F38E2B61ED8A004E5B3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162CA2B615E6600173E40 /* KYSnapshot.swift */,
+				3DE162CC2B615E8700173E40 /* KYElement.swift */,
+				3DE162CE2B615FBC00173E40 /* KYConfiguration.swift */,
+				3DE162D02B615FD900173E40 /* KYSnapshotViewConfiguration.swift */,
+				3DE162D22B615FFC00173E40 /* KYHierarchyViewConfiguration.swift */,
+				3DE162D62B61607F00173E40 /* KYViewElement.swift */,
+				3DD6F3832B61EAEA004E5B3A /* KYTreeTableViewDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DD6F38F2B61EDB3004E5B3A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319022B61F8C200503C25 /* View */,
+				3D8318FD2B61F6AE00503C25 /* Controller */,
+				3D8318E72B61F3EB00503C25 /* Helper */,
+				3DD6F3932B61EDE6004E5B3A /* Model */,
+				3DD6F3902B61EDBD004E5B3A /* DataSource */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3DD6F3902B61EDBD004E5B3A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F3912B61EDD1004E5B3A /* KYHttpDatasource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3DD6F3932B61EDE6004E5B3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F3942B61EDF8004E5B3A /* KYHttpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DD6F3962B61EE2F004E5B3A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F3972B61EE39004E5B3A /* KYDebugTool.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3DE162742B614FCF00173E40 = {
+			isa = PBXGroup;
+			children = (
+				3DE1627F2B614FCF00173E40 /* KYDebugTool */,
+				3DE1627E2B614FCF00173E40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE1627E2B614FCF00173E40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE1627D2B614FCF00173E40 /* KYDebugTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE1627F2B614FCF00173E40 /* KYDebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162942B614FE100173E40 /* Core */,
+				3DE162802B614FCF00173E40 /* AppDelegate.swift */,
+				3DE162822B614FCF00173E40 /* SceneDelegate.swift */,
+				3DE162842B614FCF00173E40 /* ViewController.swift */,
+				3D8318D72B61F05A00503C25 /* Helper */,
+				3DE162862B614FCF00173E40 /* Main.storyboard */,
+				3DE162892B614FD100173E40 /* Assets.xcassets */,
+				3DE1628B2B614FD100173E40 /* LaunchScreen.storyboard */,
+				3DE1628E2B614FD100173E40 /* Info.plist */,
+			);
+			path = KYDebugTool;
+			sourceTree = "<group>";
+		};
+		3DE162942B614FE100173E40 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3D8319092B6200BA00503C25 /* App */,
+				3DD6F3962B61EE2F004E5B3A /* Setting */,
+				3DD6F38F2B61EDB3004E5B3A /* Network */,
+				3DE162C72B615D4600173E40 /* Debug */,
+				3DE162A52B61552400173E40 /* Extension */,
+				3DE1629C2B61523D00173E40 /* Helper */,
+				3DE162952B61501000173E40 /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3DE162952B61501000173E40 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162962B61508400173E40 /* KYBaseController.swift */,
+				3DE162982B61519400173E40 /* KYBaseTableController.swift */,
+				3DE1629A2B61521200173E40 /* KYTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3DE1629C2B61523D00173E40 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DE1629D2B61532F00173E40 /* KYContants.swift */,
+				3DE162B72B615A7200173E40 /* KYUserInterfaceToolKit.swift */,
+				3D8318EE2B61F4F100503C25 /* KeyChain */,
+				3DD6F37C2B61E9C8004E5B3A /* Util */,
+				3DE162AC2B61560B00173E40 /* View */,
+				3DE162A22B61537000173E40 /* Manager */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3DE162A22B61537000173E40 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162A32B61538200173E40 /* KYWindowManager.swift */,
+				3DE162AA2B6155EA00173E40 /* KYFloatViewManager.swift */,
+				3DE162C52B615BE800173E40 /* KYSwizzleManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3DE162A52B61552400173E40 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162A62B61554000173E40 /* UINavigationController+.swift */,
+				3DE162A82B61559400173E40 /* UIWindow+.swift */,
+				3DE162B12B61573900173E40 /* UIViewController+.swift */,
+				3DE162B32B61587C00173E40 /* UIView+.swift */,
+				3DE162BF2B615B5500173E40 /* UIImage+.swift */,
+				3DE162C12B615B7400173E40 /* String+.swift */,
+				3DE162C32B615BAB00173E40 /* UIColor+.swift */,
+				3DD6F37A2B61E99C004E5B3A /* UIApplication+.swift */,
+				3D8318DF2B61F30900503C25 /* URLCache+.swift */,
+				3D8318E52B61F3A400503C25 /* HTTPURLResponse+.swift */,
+				3D8318E32B61F39000503C25 /* Date+.swift */,
+				3D8318F32B61F59E00503C25 /* InputStream+.swift */,
+				3D8318F52B61F5C300503C25 /* Data+.swift */,
+				3D8318F72B61F5E900503C25 /* Dictionary+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3DE162AC2B61560B00173E40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DE162AD2B61561800173E40 /* KYBottomFloatView.swift */,
+				3DE162AF2B61566500173E40 /* KYFloatBallView.swift */,
+				3DE162B52B6159CC00173E40 /* KYTouchIndicatorView.swift */,
+				3DE162B92B615AB300173E40 /* KYGridOverlayColorScheme.swift */,
+				3DE162BB2B615AE100173E40 /* KYGridOverlayView.swift */,
+				3DE162BD2B615B0100173E40 /* KYTopLevelViewWrapper.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DE162C72B615D4600173E40 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3DD6F38E2B61ED8A004E5B3A /* Model */,
+				3DD6F38D2B61ED34004E5B3A /* View */,
+				3DD6F38C2B61ED26004E5B3A /* Util */,
+				3DD6F38B2B61ED14004E5B3A /* ViewController */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE1627C2B614FCF00173E40 /* KYDebugTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE162912B614FD100173E40 /* Build configuration list for PBXNativeTarget "KYDebugTool" */;
+			buildPhases = (
+				3DE162792B614FCF00173E40 /* Sources */,
+				3DE1627A2B614FCF00173E40 /* Frameworks */,
+				3DE1627B2B614FCF00173E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYDebugTool;
+			productName = KYDebugTool;
+			productReference = 3DE1627D2B614FCF00173E40 /* KYDebugTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE162752B614FCF00173E40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3DE1627C2B614FCF00173E40 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 3DE162782B614FCF00173E40 /* Build configuration list for PBXProject "KYDebugTool" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE162742B614FCF00173E40;
+			productRefGroup = 3DE1627E2B614FCF00173E40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE1627C2B614FCF00173E40 /* KYDebugTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE1627B2B614FCF00173E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE1628D2B614FD100173E40 /* LaunchScreen.storyboard in Resources */,
+				3DE1628A2B614FD100173E40 /* Assets.xcassets in Resources */,
+				3DE162882B614FCF00173E40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE162792B614FCF00173E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE162C62B615BE800173E40 /* KYSwizzleManager.swift in Sources */,
+				3D8319362B62079100503C25 /* KYCrashViewModel.swift in Sources */,
+				3D83191E2B6202FB00503C25 /* KYReachability.swift in Sources */,
+				3D83192D2B62062300503C25 /* KYAppConsoleViewModel.swift in Sources */,
+				3DD6F38A2B61ECA0004E5B3A /* KYDebuggerDetailViewController.swift in Sources */,
+				3DE162CB2B615E6600173E40 /* KYSnapshot.swift in Sources */,
+				3D8319462B620A9A00503C25 /* KYPDFManager.swift in Sources */,
+				3D8318E92B61F41A00503C25 /* KYThreadOperator.swift in Sources */,
+				3D8319402B6208FE00503C25 /* KYTrace.swift in Sources */,
+				3DE162B22B61573900173E40 /* UIViewController+.swift in Sources */,
+				3D8318D92B61F06500503C25 /* RequestManager.swift in Sources */,
+				3DE162BA2B615AB300173E40 /* KYGridOverlayColorScheme.swift in Sources */,
+				3DD6F3982B61EE39004E5B3A /* KYDebugTool.swift in Sources */,
+				3D83190E2B6200FB00503C25 /* KYAppViewModel.swift in Sources */,
+				3DE162CF2B615FBC00173E40 /* KYConfiguration.swift in Sources */,
+				3DD6F3862B61EB42004E5B3A /* KYHierarchyTableViewCell.swift in Sources */,
+				3D8318E42B61F39000503C25 /* Date+.swift in Sources */,
+				3D83194A2B620B4500503C25 /* KYLogsViewController.swift in Sources */,
+				3D8319292B6204ED00503C25 /* KYResourcesGenericController.swift in Sources */,
+				3D8318F82B61F5E900503C25 /* Dictionary+.swift in Sources */,
+				3DE162D32B615FFC00173E40 /* KYHierarchyViewConfiguration.swift in Sources */,
+				3DE162DF2B61651500173E40 /* KYRangeSlider.swift in Sources */,
+				3D8319342B62075E00503C25 /* KYCrashViewController.swift in Sources */,
+				3D8319252B6204A700503C25 /* UILabel+.swift in Sources */,
+				3DE162D52B61605900173E40 /* ViewControllerUtils.swift in Sources */,
+				3D8318ED2B61F4A500503C25 /* KYUserDefaultsAccess.swift in Sources */,
+				3D8318DB2B61F25500503C25 /* KYSwizzleSessionConfiguration.swift in Sources */,
+				3DE162B82B615A7200173E40 /* KYUserInterfaceToolKit.swift in Sources */,
+				3DE162AE2B61561800173E40 /* KYBottomFloatView.swift in Sources */,
+				3D8318F42B61F59E00503C25 /* InputStream+.swift in Sources */,
+				3DE162B02B61566500173E40 /* KYFloatBallView.swift in Sources */,
+				3D8319482B620B0E00503C25 /* KYSnapshotViewController.swift in Sources */,
+				3DE162972B61508400173E40 /* KYBaseController.swift in Sources */,
+				3DE162B62B6159CC00173E40 /* KYTouchIndicatorView.swift in Sources */,
+				3D8319422B6209EA00503C25 /* KYCrashDetailViewModel.swift in Sources */,
+				3D8319162B62023000503C25 /* KYCustomData.swift in Sources */,
+				3DE162BC2B615AE100173E40 /* KYGridOverlayView.swift in Sources */,
+				3DD6F37B2B61E99C004E5B3A /* UIApplication+.swift in Sources */,
+				3DE162DD2B6164BB00173E40 /* KYSnapshotView.swift in Sources */,
+				3DD6F3842B61EAEA004E5B3A /* KYTreeTableViewDataSource.swift in Sources */,
+				3DE162CD2B615E8700173E40 /* KYElement.swift in Sources */,
+				3DE162992B61519400173E40 /* KYBaseTableController.swift in Sources */,
+				3D8319082B61F98C00503C25 /* KYNetworkTableViewCellDetail.swift in Sources */,
+				3D8318FC2B61F65800503C25 /* KYCacheHelper.swift in Sources */,
+				3D8318E02B61F30900503C25 /* URLCache+.swift in Sources */,
+				3DE162BE2B615B0100173E40 /* KYTopLevelViewWrapper.swift in Sources */,
+				3D8318EB2B61F46800503C25 /* KYDebug.swift in Sources */,
+				3D8319442B620A1C00503C25 /* KYCrashDetailViewController.swift in Sources */,
+				3D83193C2B62082200503C25 /* KYCrashManager.swift in Sources */,
+				3D8318E22B61F33000503C25 /* KYApplicationDirectories.swift in Sources */,
+				3DE162C42B615BAC00173E40 /* UIColor+.swift in Sources */,
+				3D8318F62B61F5C300503C25 /* Data+.swift in Sources */,
+				3D8319392B6207DB00503C25 /* KYCrashModel.swift in Sources */,
+				3DE162D12B615FD900173E40 /* KYSnapshotViewConfiguration.swift in Sources */,
+				3D83191A2B6202B100503C25 /* KYLaunchTimeTracker.swift in Sources */,
+				3DE162AB2B6155EA00173E40 /* KYFloatViewManager.swift in Sources */,
+				3D83193E2B62084800503C25 /* KYCrashHandler.swift in Sources */,
+				3DE162A72B61554000173E40 /* UINavigationController+.swift in Sources */,
+				3DD6F3792B61E96A004E5B3A /* KYSnapshotActionSheetUtils.swift in Sources */,
+				3D83192F2B62068800503C25 /* KYLogIntercepter.swift in Sources */,
+				3DE162852B614FCF00173E40 /* ViewController.swift in Sources */,
+				3DD6F3882B61EB78004E5B3A /* KYParallelLineView.swift in Sources */,
+				3D8318F22B61F56400503C25 /* KYNetworkHelper.swift in Sources */,
+				3DE162C92B615D5300173E40 /* KYInAppViewDebugger.swift in Sources */,
+				3DD6F3952B61EDF8004E5B3A /* KYHttpModel.swift in Sources */,
+				3D8319062B61F8FB00503C25 /* KYNetworkViewControllerDetail.swift in Sources */,
+				3DE162812B614FCF00173E40 /* AppDelegate.swift in Sources */,
+				3DE162D72B61607F00173E40 /* KYViewElement.swift in Sources */,
+				3DE162D92B61620F00173E40 /* KYViewDebuggerViewController.swift in Sources */,
+				3D83192B2B6205DF00503C25 /* KYAppCustomActionViewModel.swift in Sources */,
+				3D8319232B62048E00503C25 /* UITableViewCell+.swift in Sources */,
+				3D8319182B62025C00503C25 /* KYCustomAction.swift in Sources */,
+				3D8319112B62014600503C25 /* KYUserInfo.swift in Sources */,
+				3D8318DE2B61F2A400503C25 /* KYCustomHTTPProtocol.swift in Sources */,
+				3DE162B42B61587C00173E40 /* UIView+.swift in Sources */,
+				3DD6F3802B61EA1F004E5B3A /* KYTransitionPop.swift in Sources */,
+				3D8318E62B61F3A400503C25 /* HTTPURLResponse+.swift in Sources */,
+				3D8318F02B61F50300503C25 /* KeychainService.swift in Sources */,
+				3D8319272B6204C200503C25 /* KYAppCustomInfoViewModel.swift in Sources */,
+				3D83191C2B6202DB00503C25 /* KYReachabilityManager.swift in Sources */,
+				3DE162C02B615B5500173E40 /* UIImage+.swift in Sources */,
+				3DD6F3922B61EDD1004E5B3A /* KYHttpDatasource.swift in Sources */,
+				3DD6F3822B61EAA4004E5B3A /* KYHierarchyTableViewController.swift in Sources */,
+				3DE162832B614FCF00173E40 /* SceneDelegate.swift in Sources */,
+				3DE1629B2B61521200173E40 /* KYTabBarController.swift in Sources */,
+				3DE162C22B615B7400173E40 /* String+.swift in Sources */,
+				3D8319012B61F6F700503C25 /* KYNetworkViewModel.swift in Sources */,
+				3DE1629E2B61532F00173E40 /* KYContants.swift in Sources */,
+				3DD6F37E2B61E9D5004E5B3A /* KYTransitionPush.swift in Sources */,
+				3D83190B2B6200C100503C25 /* KYAppViewController.swift in Sources */,
+				3D8319212B62043500503C25 /* KYMenuSwitchTableViewCell.swift in Sources */,
+				3D8318FA2B61F61900503C25 /* KYErrorHelper.swift in Sources */,
+				3DE162A42B61538200173E40 /* KYWindowManager.swift in Sources */,
+				3D8319042B61F8CB00503C25 /* KYNetworkTableViewCell.swift in Sources */,
+				3D8318FF2B61F6B800503C25 /* KYNetworkViewController.swift in Sources */,
+				3DE162DB2B61647500173E40 /* KYDebugSnapshotViewController.swift in Sources */,
+				3DE162A92B61559400173E40 /* UIWindow+.swift in Sources */,
+				3D8319132B6201FD00503C25 /* UIDevice+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DE162862B614FCF00173E40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE162872B614FCF00173E40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE1628B2B614FD100173E40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE1628C2B614FD100173E40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE1628F2B614FD100173E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DE162902B614FD100173E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE162922B614FD100173E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KYDebugTool/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.KYDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DE162932B614FD100173E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KYDebugTool/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.KYDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE162782B614FCF00173E40 /* Build configuration list for PBXProject "KYDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE1628F2B614FD100173E40 /* Debug */,
+				3DE162902B614FD100173E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE162912B614FD100173E40 /* Build configuration list for PBXNativeTarget "KYDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE162922B614FD100173E40 /* Debug */,
+				3DE162932B614FD100173E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE162752B614FCF00173E40 /* Project object */;
+}
